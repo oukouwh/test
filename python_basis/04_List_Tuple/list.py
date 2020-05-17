@@ -126,3 +126,39 @@ print(list_result)
 print(type(list_result))
 str_result = ' '.join(list_result[::-1])
 print(str_result)
+
+list_num = [99, 2, 34, 5, 67, 8]
+min_value = list_num[0]
+for i in range(1, len(list_num)):
+    if min_value > list_num[i]:
+        min_value = list_num[i]
+
+print(min_value)
+
+# 列表推导式
+list_num = [1, 2, 3, 4, 5]
+list_num1 = []
+for i in list_num:
+    list_num1.append(i + 1)
+# print(list_num1)
+# [2, 3, 4, 5, 6]
+
+# 列表推导式简化代买
+list_num1 = [i + 1 for i in list_num]
+print(list_num1)  # 结果同上面运行结果一致，代码看着更优雅
+# [2, 3, 4, 5, 6]
+
+
+# 列表推导式1
+list_num = [11, 22, 33, 44, 56]
+list_num1 = []
+for i in list_num:
+    if i > 30:
+        list_num1.append(i)
+print(list_num1)
+# [33, 44, 56]
+
+# 列表推导式简化代买
+list_num1 = [i for i in list_num if i > 30]
+print(list_num1)  # 结果同上面运行结果一致，代码看着更优雅
+# [33, 44, 56]
