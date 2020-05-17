@@ -108,3 +108,21 @@ print(str_reverse)  # ['Tom', 'jack', 'python', 'c++']
 str_reverse.reverse()
 print(str_reverse)  # ['c++', 'python', 'jack', 'Tom']
 
+list_result = []
+while True:
+    str_input = input('请输入字符串')
+    if str_input == '':
+        break
+    list_result.append(str_input)
+
+str_result = ''.join(list_result)
+print(str_result)
+print(type(str_result))
+
+# 反转
+str_demo = 'hello world'
+list_result = str_demo.split(" ")
+print(list_result)
+print(type(list_result))
+str_result = ' '.join(list_result[::-1])
+print(str_result)
