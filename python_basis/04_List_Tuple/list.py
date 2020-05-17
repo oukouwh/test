@@ -143,7 +143,7 @@ for i in list_num:
 # print(list_num1)
 # [2, 3, 4, 5, 6]
 
-# 列表推导式简化代买
+# 列表推导式简化版
 list_num1 = [i + 1 for i in list_num]
 print(list_num1)  # 结果同上面运行结果一致，代码看着更优雅
 # [2, 3, 4, 5, 6]
@@ -158,7 +158,7 @@ for i in list_num:
 print(list_num1)
 # [33, 44, 56]
 
-# 列表推导式简化代买
+# 列表推导式简化版
 list_num1 = [i for i in list_num if i > 30]
 print(list_num1)  # 结果同上面运行结果一致，代码看着更优雅
 # [33, 44, 56]
