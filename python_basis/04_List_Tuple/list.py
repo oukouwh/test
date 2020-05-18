@@ -162,3 +162,10 @@ print(list_num1)
 list_num1 = [i for i in list_num if i > 30]
 print(list_num1)  # 结果同上面运行结果一致，代码看着更优雅
 # [33, 44, 56]
+
+list_num = [i ** 2 for i in range(1,11)]
+print(list_num)
+list_num1 = [i for i in list_num if i % 2 == 1]
+print(list_num1)
+list_num2 = [i for i in list_num if i % 2 == 0]
+print(list_num2)
